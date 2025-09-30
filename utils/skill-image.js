@@ -57,6 +57,7 @@ import prisma from '../app/assets/svg/skills/prisma.svg';
 import python from '../app/assets/svg/skills/python.svg';
 import pytorch from '../app/assets/svg/skills/pytorch.svg';
 import react from '../app/assets/svg/skills/react.svg';
+import reactnative from '../app/assets/svg/skills/reactnative.svg';
 import ruby from '../app/assets/svg/skills/ruby.svg';
 import selenium from '../app/assets/svg/skills/selenium.svg';
 import sketch from '../app/assets/svg/skills/sketch.svg';
@@ -73,7 +74,7 @@ import vuetifyjs from '../app/assets/svg/skills/vuetifyjs.svg';
 import webix from '../app/assets/svg/skills/webix.svg';
 import wolframalpha from '../app/assets/svg/skills/wolframalpha.svg';
 import wordpress from '../app/assets/svg/skills/wordpress.svg';
-
+import nodejs from '../app/assets/svg/skills/nodejs.svg';
 import pandas from '../app/assets/svg/skills/pandas.svg';
 import scikitlearn from '../app/assets/svg/skills/scikit-learn.svg';
 import dotnet from '../app/assets/svg/skills/dotnet.svg';
@@ -112,8 +113,12 @@ export const skillsImage = (skill) => {
       return nextJS;
     case 'nuxt js':
       return nuxtJS;
+    case 'node js':
+      return nodejs;
     case 'react':
       return react;
+    case 'react native':
+      return reactnative;
     case 'svelte':
       return svelte;
     case 'typescript':

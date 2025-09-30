@@ -64,6 +64,19 @@ function ProjectCard({ project }) {
           <div><span className="text-gray-400">{`};`}</span></div>
         </code>
       </div>
+      
+      {project.demo && (
+        <div className="flex justify-center px-4 lg:px-8 py-4">
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-violet-600 to-pink-500 text-white px-6 py-2 rounded-lg font-medium hover:from-violet-700 hover:to-pink-600 transition-all duration-300"
+          >
+            View Live Demo
+          </a>
+        </div>
+      )}
     </div>
   );
 };
