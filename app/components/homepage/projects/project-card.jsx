@@ -1,6 +1,7 @@
 // @flow strict
 
 import * as React from 'react';
+import { FaAppStoreIos, FaGooglePlay } from 'react-icons/fa';
 
 function ProjectCard({ project }) {
 
@@ -65,16 +66,40 @@ function ProjectCard({ project }) {
         </code>
       </div>
       
-      {project.demo && (
-        <div className="flex justify-center px-4 lg:px-8 py-4">
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gradient-to-r from-violet-600 to-pink-500 text-white px-6 py-2 rounded-lg font-medium hover:from-violet-700 hover:to-pink-600 transition-all duration-300"
-          >
-            View Live Demo
-          </a>
+      {(project.demo || project.appStore || project.playStore) && (
+        <div className="flex flex-wrap justify-center gap-3 px-4 lg:px-8 py-4">
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-violet-600 to-pink-500 text-white px-6 py-2 rounded-lg font-medium hover:from-violet-700 hover:to-pink-600 transition-all duration-300"
+            >
+              View Live Demo
+            </a>
+          )}
+          {project.appStore && (
+            <a
+              href={project.appStore}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-gradient-to-r from-violet-600 to-pink-500 text-white px-6 py-2 rounded-lg font-medium hover:from-violet-700 hover:to-pink-600 transition-all duration-300"
+            >
+              <FaAppStoreIos size={18} />
+              App Store
+            </a>
+          )}
+          {project.playStore && (
+            <a
+              href={project.playStore}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-gradient-to-r from-violet-600 to-pink-500 text-white px-6 py-2 rounded-lg font-medium hover:from-violet-700 hover:to-pink-600 transition-all duration-300"
+            >
+              <FaGooglePlay size={16} />
+              Google Play
+            </a>
+          )}
         </div>
       )}
     </div>

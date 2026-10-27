@@ -1,5 +1,16 @@
 export const projectsData = [
     {
+        id: 0,
+        name: 'Atlántida Móvil Empresarial',
+        description: "Banco Atlántida's mobile banking app for corporate and SME clients on iOS and Android, developed at INFATLAN. Businesses use it to authorize and verify 400+ transaction types, including payroll, supplier, tax, and utility payments, with role-based access for authorizers, operators, and verifiers. I implemented ACH and LBTR interbank transfer flows, payments for local services, businesses, and government entities, a favorites system for repeat transfers, and performance improvements across both platforms.",
+        tools: ['React Native', 'iOS', 'Android', 'Xcode', 'TestFlight'],
+        role: 'Senior React Native Developer',
+        code: '',
+        demo: '',
+        appStore: 'https://apps.apple.com/app/id6504499705',
+        playStore: 'https://play.google.com/store/apps/details?id=hn.bancatlan.atlantidamovilcorporativo',
+    },
+    {
         id: 1,
         name: 'Inventory and Sales System for Recycling Company',
         description: "A web app designed to manage recyclable material inventory, sales, and reporting. It helps track materials from entry to sale, improves control of stock, and generates receipts and dashboards for analysis. The app features user authentication, role-based access, and a responsive design for various devices. Built with a modern tech stack, it ensures security and efficiency in operations.",
@@ -40,4 +51,6 @@ export const projectsData = [
 //     role: '',
 //     code: '',
 //     demo: '',
+//     appStore: '',   // optional
+//     playStore: '',  // optional
 // },
